@@ -1,5 +1,4 @@
 #!/bin/bash
-
 set -e
 
 ascii_art='   ______           __           __ __ __
@@ -11,23 +10,23 @@ ascii_art='   ______           __           __ __ __
 '
 
 echo -e "$ascii_art"
-echo "=> Omakub is for fresh Ubuntu 24.04+ installations only!"
+echo "=> CodeKub is for fresh Ubuntu 24.04+ installations only!"
 echo -e "\nBegin installation (or abort with ctrl+c)..."
 
 sudo apt-get update >/dev/null
 sudo apt-get install -y git >/dev/null
 
-echo "Cloning Omakub..."
+echo "Cloning CodeKub..."
 rm -rf ~/.local/share/omakub
 git clone https://github.com/CodeCompasss/codekub.git ~/.local/share/omakub >/dev/null
 
-if [[ -n "$OMAKUB_REF" ]]; then
+# Optional: allow advanced users to install a specific branch/tag
+if [[ -n "${OMAKUB_REF:-}" ]]; then
     cd ~/.local/share/omakub
     git fetch origin "$OMAKUB_REF"
     git checkout "$OMAKUB_REF"
-    cd -
+    cd - >/dev/null
 fi
-
 
 echo "Installation starting..."
 source ~/.local/share/omakub/install.sh

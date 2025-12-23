@@ -9,8 +9,6 @@ ascii_art='   ______           __           __ __ __
 \____/\____/____/\__/\___/\__,_/_/ \___/ 
               C O D E K U B
 '
-
-
 echo -e "$ascii_art"
 echo "=> codekub is for fresh Ubuntu 24.04+ installations only!"
 echo -e "\nBegin installation (or abort with ctrl+c)..."
