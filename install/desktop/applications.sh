@@ -1,5 +1,8 @@
+
 #!/bin/bash
 
-find ~/.local/share/omakub/applications -type f -name "*.sh" | while read -r script; do
-  source "$script"
+find "$HOME/.local/share/omakub/applications" -type f -name "*.sh" -print0 |
+while IFS= read -r -d '' script; do
+  echo "▶ Running: $script"
+  bash "$script"
 done
