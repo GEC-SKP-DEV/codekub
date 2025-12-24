@@ -18,7 +18,7 @@ echo -e "\nBegin installation (or abort with ctrl+c)..."
 sudo apt-get update >/dev/null
 sudo apt-get install -y git >/dev/null
 
-echo "Cloning codekub..."
+echo "Cloning codekub in dev branch ..."
 rm -rf ~/.local/share/omakub
 git clone --branch dev --single-branch https://github.com/CodeCompasss/codekub.git ~/.local/share/omakub >/dev/null
 
