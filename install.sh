@@ -29,6 +29,7 @@ if [[ "$XDG_CURRENT_DESKTOP" == *"GNOME"* ]]; then
   # Install desktop tools and tweaks
   source ~/.local/share/omakub/install/desktop.sh
 
+  echo "Trying to intsall zsh file 
   source ~/.local/share/omakub/install/zsh.sh
 
 
