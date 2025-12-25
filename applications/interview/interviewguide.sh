@@ -6,6 +6,6 @@ Exec=xdg-open https://interviewguide.dev/technical-knowledge
 Icon=applications-education
 Terminal=false
 Type=Application
-Categories=Interview;
+Categories=X-Interview;
 StartupNotify=true
 EOF

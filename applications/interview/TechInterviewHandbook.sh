@@ -6,6 +6,6 @@ Exec=xdg-open https://www.techinterviewhandbook.org/
 Icon=/home/$USER/.local/share/omakub/applications/icons/techinterviewhandbook.png
 Terminal=false
 Type=Application
-Categories=Interview;
+Categories=X-Interview;
 StartupNotify=true
 EOF

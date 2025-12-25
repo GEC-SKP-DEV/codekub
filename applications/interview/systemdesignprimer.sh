@@ -6,6 +6,6 @@ Exec=xdg-open https://github.com/donnemartin/system-design-primer
 Icon=/home/$USER/.local/share/omakub/applications/icons/system-design.png
 Terminal=false
 Type=Application
-Categories=Interview;
+Categories=X-Interview;
 StartupNotify=true
 EOF

@@ -6,6 +6,6 @@ Exec=xdg-open https://leetcode.com/
 Icon=/home/$USER/.local/share/omakub/applications/icons/leetcode.png
 Terminal=false
 Type=Application
-Categories=Interview;
+Categories=X-Interview;
 StartupNotify=true
 EOF

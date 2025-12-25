@@ -6,6 +6,6 @@ Exec=xdg-open https://www.geeksforgeeks.org/category/puzzles/
 Icon=/home/$USER/.local/share/omakub/applications/icons/geeksforgeeks.png
 Terminal=false
 Type=Application
-Categories=Interview;
+Categories=X-Interview;
 StartupNotify=true
 EOF

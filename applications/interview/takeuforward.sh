@@ -6,6 +6,6 @@ Exec=xdg-open https://takeuforward.org/
 Icon=/home/$USER/.local/share/omakub/applications/icons/takeuforward.png
 Terminal=false
 Type=Application
-Categories=Interview;
+Categories=X-Interview;
 StartupNotify=true
 EOF

@@ -6,6 +6,6 @@ Exec=xdg-open https://www.indiabix.com/
 Icon=/home/$USER/.local/share/omakub/applications/icons/indiabix.png
 Terminal=false
 Type=Application
-Categories=Interview;
+Categories=X-Interview;
 StartupNotify=true
 EOF
