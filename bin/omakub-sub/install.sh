@@ -2,8 +2,6 @@
 
 CHOICES=(
   "Dev Editor        Install alternative programming editors"
-  "Dev Language      Install programming language environment"
-  "Dev Database      Install development database in Docker"
   "1password         Manage your passwords securely across devices"
   "Audacity          Record and edit audio"
   "ASDControl        Set brightness on Apple Studio and XDR displays"
