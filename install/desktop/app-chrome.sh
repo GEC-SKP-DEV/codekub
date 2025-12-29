@@ -5,7 +5,7 @@ set -e
 if command -v google-chrome >/dev/null 2>&1; then
   echo "✅ Google Chrome already installed. Skipping."
   xdg-settings set default-web-browser google-chrome.desktop || true
-  exit 0
+  return 0 2>/dev/null || true
 fi
 
 echo "⬇️ Installing Google Chrome..."

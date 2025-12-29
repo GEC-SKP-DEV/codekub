@@ -137,7 +137,7 @@ After reboot:
 3. Run:
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/CodeCompasss/codekub/refs/heads/dev/boot.sh | bash
+curl -sSL https://raw.githubusercontent.com/CodeCompasss/codekub/refs/heads/main/boot.sh | bash
 ```
 
 You can repeat **Step 5 → Step 6** for further testing.
