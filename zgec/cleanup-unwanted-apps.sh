@@ -2,7 +2,10 @@
 
 set -e
 
-ROOT_DIR="$(cd "$(dirname "$0")" && pwd)"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+
+# ROOT_DIR = repo root (one level above zgec)
+ROOT_DIR="$(dirname "$SCRIPT_DIR")"
 
 DESKTOP_DIR="$ROOT_DIR/install/desktop"
 TERMINAL_DIR="$ROOT_DIR/install/terminal"
@@ -67,4 +70,18 @@ for file in "${APPLICATIONS_FILES[@]}"; do
 done
 
 echo
+
+# Move select-dev-language.sh to terminal regardless
+mv -f "$ROOT_DIR/zgec/select-dev-language.sh" "$TERMINAL_DIR/" 2>/dev/null || true
+echo "✅ Moved select-dev-language.sh to install/terminal/"
+
+# Move gecianhub.sh to application regardless
+mv -f "$ROOT_DIR/zgec/GecianHub.sh" "$APPLICATIONS_DIR/" 2>/dev/null || true
+echo "✅ Moved gecian hub.sh  to applicatons"
+
+
+
+
+
+
 echo "✅ Cleanup complete"

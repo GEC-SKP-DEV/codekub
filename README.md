@@ -1,47 +1,44 @@
 
+# Gecian_codekub
 
-# Codekub
-
-*A beginner-friendly fork of Omakub for Computer Science students*
+*A beginner-friendly fork of Codekub, specialized for GEC-SKP College students*
 
 ![Demo GIF](video/output.gif)
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/CodeCompasss/codekub/main/boot.sh | bash
+curl -sSL https://raw.githubusercontent.com/GEC-SKP-DEV/Gecian_codekub/refs/heads/main/boot.sh | bash
 ```
 
-**Codekub** is a fork of **Omakub**, reimagined specifically for **Computer Science beginners** and early-stage developers.
+**Gecian_codekub** is a fork of **Codekub**, specifically tailored for **GEC-SKP College students** and early-stage developers.
 
 Its goal is simple:
-👉 turn a fresh Ubuntu installation into a **fully configured, modern, and beginner-friendly development environment** using a single command — **while clearly explaining what’s happening and why**.
+👉 Turn a fresh Ubuntu installation into a **fully configured, modern, and beginner-friendly development environment** using a single command — **while clearly explaining what’s happening and why**.
 
 ---
 
-## What makes Codekub different?
+## What makes Gecian_codekub different?
 
-While Omakub is an opinionated, production-ready Linux setup for experienced developers, **Codekub focuses on learning**.
+While Codekub is a learning-focused Linux setup, **Gecian_codekub adds customizations for GEC-SKP College students**:
 
-Codekub is designed for:
+* 🎓 Pre-configured for the college environment
+* 🧑‍💻 Beginner-friendly tools and setup
+* 🚀 Designed for programming learning and practical projects
 
-* 🎓 **CSE students**
-* 🧑‍💻 **Programming beginners**
-* 🚀 Anyone learning development tools from scratch
-
-### Codekub emphasizes:
+### Gecian_codekub emphasizes:
 
 * Clear explanations of tools and configurations
 * Beginner-oriented defaults
-* Practical learning over hidden magic
+* Practical learning with guided setup
 * Modern web and software development essentials
 * A clean, beautiful Linux experience without overwhelm
 
-Instead of just installing tools, **Codekub helps you understand them**.
+Instead of just installing tools, **Gecian_codekub helps students understand them**.
 
 ---
 
-## What does Codekub do?
+## What does Gecian_codekub do?
 
-With one command, Codekub:
+With one command, Gecian_codekub:
 
 * Sets up a modern Ubuntu development environment
 * Installs essential programming tools and languages
@@ -49,24 +46,27 @@ With one command, Codekub:
 * Applies a clean and productive UI
 * Explains key concepts along the way
 
-No need to manually configure everything or guess best practices — Codekub provides a guided starting point.
+No need to manually configure everything — Gecian_codekub provides a guided starting point for students.
 
 ---
 
-## Based on Omakub
+## Based on Codekub
 
-Codekub is built on top of the excellent work done in **Omakub**, an opinionated Linux setup created to showcase what Linux can be at its best.
+Gecian_codekub is a fork of **Codekub**, which itself is a beginner-focused fork of **Omakub**.
 
-Learn more about the original project at:
-👉 [https://omakub.org](https://omakub.org)
+Learn more about the original projects:
+
+* Omakub: [https://omakub.org](https://omakub.org)
+* Codekub: [Original GitHub](https://github.com/CodeCompasss/codekub)
 
 ---
 
-here is the youtube video link on installation process 
+Here is the YouTube video link for the installation process:
 [Watch this video](https://youtu.be/AU_xhhFQX-0)
 
+---
 
 ## License
 
-Codekub inherits the open-source spirit of Omakub and is released under the **License**.
+Gecian_codekub inherits the open-source spirit of Codekub and is released under the **License**.
 

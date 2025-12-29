@@ -119,9 +119,10 @@ Once the scripts finish, Codekub configures the desktop:
 * VS Code background, Neovim, btop, Zellij, and top-hat themes included
 * Users can switch themes via the Codekub app
 
+# Note 
 
+After each pull from Codekub (git fetch origin), there may be some files that you no longer need. You can remove them using cleanup-unwanted-apps.sh.
 
-the main problem is the boot when using dev branch for checking downlaod the main branch we will losoe so mathc time we realixe itis donwload main branch a
+We removed a few apps from the original setup for the college version, so this cleanup ensures everything stays tidy.
 
-the ascii cannot have ' otherwise it will bash eroror 
-make sure the "" are all closed and stuff 
+We have set up a folder called zgec. Simply invoke cleanup-unwanted-apps.sh inside it, and it will remove all the unnecessary files
