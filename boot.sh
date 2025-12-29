@@ -23,12 +23,11 @@ sudo apt-get install -y git >/dev/null
 echo "Cloning codekub using default branch ..."
 rm -rf ~/.local/share/omakub
 git clone https://github.com/CodeCompasss/codekub.git ~/.local/share/omakub >/dev/null
-
 cd ~/.local/share/omakub
 current_branch=$(git rev-parse --abbrev-ref HEAD)
-echo "✅ Cloned branch: $current_branch"
+echo "✅ Codekub branch: $current_branch"
 
-# Optionally switch to a specific branch if OMAKUB_REF is set
+# Optionally switch branch
 if [[ -n "$OMAKUB_REF" ]]; then
     git fetch origin "$OMAKUB_REF"
     git checkout "$OMAKUB_REF"
@@ -37,5 +36,9 @@ if [[ -n "$OMAKUB_REF" ]]; then
 fi
 cd -
 
-echo "Installation starting..."
+echo "=================================="
+echo "🚀 Starting Codekub installation"
+echo "🌿 Branch: $current_branch"
+echo "=================================="
+
 source ~/.local/share/omakub/install.sh
