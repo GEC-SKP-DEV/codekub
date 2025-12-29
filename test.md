@@ -66,7 +66,7 @@ At this point, you have a clean Ubuntu environment ready for Codekub.
 For development and testing:
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/CodeCompasss/codekub/refs/heads/dev/boot.sh | bash
+curl -sSL https://raw.githubusercontent.com/CodeCompasss/codekub/refs/heads/main/boot.sh | bash
 ```
 
 This will:
