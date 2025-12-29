@@ -1,27 +1,88 @@
-Copyright (c) 2025 Shadil Am. All rights reserved.
+# Codekub Repository License & Terms of Use
 
-1. DEFINITIONS  
-   “Repository” means this source code and its associated files.  
-   “You” means any individual or entity that forks, clones, copies, views, or otherwise accesses the Repository.
+**Copyright (c) 2025 Shadil Am. All rights reserved.**
 
-2. LICENSE AND RESTRICTIONS  
-   This Repository is proprietary and confidential. You may *not* use, copy, modify, distribute, display, execute, publish, sublicense, or sell it in whole or in part without express prior written permission from Shadil Am.  
-   *Exception:* You may fork the Repository and submit pull requests on GitHub solely for the purpose of contributing code back. Such usage is strictly limited to GitHub’s pull-request system and does not grant any other rights.
+By accessing, cloning, forking, or using this repository (the “Repository”), you agree to the following terms.
 
-3. NO IMPLIED LICENSE  
-   No license—express, implied, by estoppel, or otherwise—to any intellectual property is granted except as expressly stated above.
+---
 
-4. TERMINATION  
-   Any use beyond the limited exception in Section 2 will immediately terminate any rights you may have under this Agreement.
+## 1. DEFINITIONS
 
-5. DISCLAIMER OF WARRANTIES  
-   This Repository is provided “AS IS,” without any warranty, express or implied. To the maximum extent permitted by applicable law, Shadil Am disclaims all warranties.
+* **Repository**: This source code, assets, documentation, and any associated files.
+* **You / User**: Any individual or entity accessing, copying, viewing, or using the Repository.
+* **Commercial Use**: Any use that generates revenue, is intended for a company or business, or is part of a paid product/service.
+* **Educational Use**: Use by students, teachers, or researchers for non-commercial purposes, including personal projects, learning, or coursework.
 
-6. LIMITATION OF LIABILITY  
-   Shadil Am will not be liable for any special, indirect, incidental, or consequential damages arising out of or in connection with this Repository.
+---
 
-7. GOVERNING LAW & JURISDICTION  
-   This Agreement is governed by and construed under the laws of the State of Kerala, Republic of India, without regard to its conflict-of-law rules. You irrevocably submit to the exclusive jurisdiction of the courts located in Kochi, Kerala, India, for any dispute arising under or relating to this Agreement.
+## 2. LICENSE & PERMITTED USE
 
-8. CONTACT  
-   Permission requests or inquiries should be sent to *shadilrayyan2@gmail.com*.
+1. **Proprietary Rights**
+
+   * The Repository is **proprietary and confidential**. All rights, title, and interest remain with Shadil Am.
+
+2. **Permitted Uses**
+
+   * **Educational / Personal Use**: Free of charge. You may fork, clone, or use the Repository for learning, testing, or personal projects.
+   * **Commercial Use**: Requires express written permission and may involve licensing fees. Contact the author for terms.
+
+3. **Restrictions**
+   You may **not**:
+
+   * Distribute, sell, sublicense, or otherwise commercially exploit the Repository or its components without permission
+   * Modify and redistribute the Repository as your own product for commercial purposes
+   * Circumvent any access control, license mechanism, or digital rights implemented in the Repository
+
+4. **Open Contribution Exception**
+
+   * You may submit pull requests on GitHub solely to contribute code back.
+   * Such contributions do **not** grant any other rights to copy, use, or redistribute the Repository.
+
+---
+
+## 3. UPDATES TO TERMS
+
+* Shadil Am reserves the right to **update, modify, or change these terms** at any time.
+* Users are responsible for reviewing the latest terms on the Repository. Continued use constitutes acceptance of updated terms.
+
+---
+
+## 4. NO IMPLIED LICENSE
+
+* Except for the limited permissions above, **no express or implied license** is granted to any intellectual property in the Repository.
+
+---
+
+## 5. TERMINATION
+
+* Any use beyond the permitted scope (e.g., commercial exploitation without permission) **immediately terminates your rights** under this agreement.
+* Upon termination, you must delete all copies of the Repository.
+
+---
+
+## 6. DISCLAIMER OF WARRANTIES
+
+* The Repository is provided **“AS IS”**.
+* Shadil Am makes **no warranties**, express or implied, including but not limited to fitness for a particular purpose, non-infringement, or reliability.
+
+---
+
+## 7. LIMITATION OF LIABILITY
+
+* Shadil Am shall **not be liable** for any direct, indirect, incidental, special, or consequential damages arising from use of the Repository.
+* This applies regardless of the form of claim, even if advised of potential damages.
+
+---
+
+## 8. GOVERNING LAW & JURISDICTION
+
+* These terms are governed by the laws of the **State of Kerala, Republic of India**.
+* Any dispute will be exclusively resolved in the courts located in **Kochi, Kerala, India**.
+
+---
+
+## 9. CONTACT & PERMISSIONS
+
+* For commercial licensing, permissions, or questions, contact: **[shadilrayyan2@gmail.com](mailto:shadilrayyan2@gmail.com)**
+* You may request written permission for use outside the permitted educational/personal scope.
+

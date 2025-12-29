@@ -15,11 +15,11 @@ sudo cp ~/.local/share/gnome-shell/extensions/tophat@fflewddur.github.io/schemas
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
 
 # Configure TopHat
-gsettings set org.gnome.shell.extensions.tophat show-icons false
-gsettings set org.gnome.shell.extensions.tophat show-cpu false
-gsettings set org.gnome.shell.extensions.tophat show-disk false
-gsettings set org.gnome.shell.extensions.tophat show-mem false
-gsettings set org.gnome.shell.extensions.tophat network-usage-unit bits
+# gsettings set org.gnome.shell.extensions.tophat show-icons false
+# gsettings set org.gnome.shell.extensions.tophat show-cpu false
+# gsettings set org.gnome.shell.extensions.tophat show-disk false
+# gsettings set org.gnome.shell.extensions.tophat show-mem false
+# gsettings set org.gnome.shell.extensions.tophat network-usage-unit bits
 
 # Set TopHat metrics color to match the theme
 THEME_NAMES=("Tokyo Night" "Catppuccin" "Nord" "Everforest" "Gruvbox" "Kanagawa" "Rose Pine")

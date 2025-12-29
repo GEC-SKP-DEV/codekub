@@ -1,34 +1,33 @@
 
 
-## Installation & Testing Guide (Recommended Workflow)
+# Codekub Installation & Testing Guide (Easy Version)
 
-Codekub can be tested either on a **real Ubuntu installation** or inside a **virtual machine**.
-For development and testing, a **virtual machine is strongly recommended**.
+You can test Codekub on:
+
+* A **real Ubuntu system**, or
+* A **virtual machine** (VM) – recommended for safety.
 
 ---
 
-## Recommended Virtualization Setup
+## 1️⃣ Virtual Machine Setup
 
-### Preferred option
+### Recommended
 
 ✅ **GNOME Boxes**
 
-* Simpler and more beginner-friendly
-* Better GNOME integration
-* Fewer networking and display issues than VirtualBox or VMware
+* Simple and beginner-friendly
+* Works well with GNOME
+* Fewer problems than VirtualBox or VMware
 
 ### Not recommended
 
-❌ VirtualBox
-❌ VMware
-
-(They work, but are more complex and often cause unnecessary issues for beginners.)
+❌ VirtualBox / VMware (more complex)
 
 ---
 
-## Step 1: Install GNOME Boxes
+## 2️⃣ Install GNOME Boxes
 
-On your host system:
+On your host Ubuntu system, run:
 
 ```bash
 sudo apt install gnome-boxes
@@ -36,60 +35,77 @@ sudo apt install gnome-boxes
 
 ---
 
-## Step 2: Create an Ubuntu 24.04 Virtual Machine
+## 3️⃣ Create Ubuntu 24.04 VM
 
 1. Open **GNOME Boxes**
-2. Create a new virtual machine
-3. Select **Ubuntu 24.04**
-4. Allocate enough storage (important!)
+2. Create a new VM
+3. Choose **Ubuntu 24.04 ISO**
+4. Give enough disk space
 
-⚠️ **Important storage note**
+⚠️ **Do NOT use live mode.**
 
-* **Live mode will NOT work**
-* Live sessions do not have enough persistent storage
-* You **must install Ubuntu 24.04 to the virtual disk**
-
----
-
-## Step 3: Install Ubuntu 24.04 Inside the VM
-
-* Complete the normal Ubuntu installation
-* Reboot into the installed system
-* Log in normally
-
-At this point, you have a clean Ubuntu environment ready for Codekub.
+* Live sessions don’t save changes.
+* You must install Ubuntu on the virtual disk.
 
 ---
 
-## Step 4: Run the Codekub Script (Development Branch)
+## 4️⃣ Install Ubuntu in the VM
 
-For development and testing:
+* Install Ubuntu normally
+* Reboot and log in
+
+Now your VM is ready for Codekub.
+
+---
+
+## 5️⃣ Run Codekub Installer (Development Branch)
+
+**Problem:** The boot script downloads `main` branch by default.
+
+* If you are testing `dev` branch, it may overwrite it.
+
+**Solution:** Set the branch you want:
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/CodeCompasss/codekub/refs/heads/dev/boot.sh | bash
+export OMAKUB_REF="dev"
+curl -sSL https://raw.githubusercontent.com/CodeCompasss/codekub/main/boot.sh | bash
 ```
 
-This will:
+**Important Notes:**
 
-* Prepare the system
-* Run the installer
-* Apply themes, tools, and desktop configuration
+* ASCII art in the script **cannot have single quotes `'`**
+* Always use **here-doc** for ASCII art:
+
+```bash
+ascii_art=$(cat <<'EOF'
+   ______           __           __ __ __
+  ____          _       ____                                    
+ / ___|___   __| | ___ / ___|___  _ __ ___  _ __   __ _ ___ ___ 
+| |   / _ \ / _` |/ _ \ |   / _ \| _ _ _| _ \ / _` / __/ __|
+| |__| (_) | (_| |  __/ |__| (_) | | | | | |_) | (_| \__ \__ \
+ \____\___/ \__,_|\___|\____\___/|_| |_| |_| .__/ \__,_|___/___/
+                                           |_|                  
+              C O D E   C O M P A S S
+EOF
+)
+```
+
+* Make sure **all quotes `"` in echo or strings are closed**.
 
 ---
 
-## Step 5: Reset the System for Re-Testing (⚠️ Dangerous)
+## 6️⃣ Snapshot & Testing
 
-If you want to **test the installer again from scratch**, you can reset user configuration.
+* Before running Codekub, go to **GNOME Boxes → Settings → Snapshot**
+* Create a snapshot.
+* Run Codekub and test everything (apps, themes, GNOME settings).
+* If needed, **restore snapshot** to start fresh.
 
-⚠️ **WARNING – DESTRUCTIVE COMMAND**
-This will:
+---
 
-* Delete almost all user configuration
-* Reset GNOME settings
-* Remove themes, icons, fonts, and app data
-* Log you out and reboot
+## 7️⃣ Reset Ubuntu (Optional / Dangerous)
 
-### Reset Command
+If you want a completely clean environment:
 
 ```bash
 rm -rf \
@@ -113,34 +129,46 @@ dconf reset -f / && \
 sudo reboot
 ```
 
----
-
-## Why This Is Needed
-
-* Codekub modifies many user-level settings
-* Re-running the installer without cleanup can cause:
-
-  * Themes not applying
-  * GNOME settings not updating
-  * Old configs overriding new changes
-
-This reset simulates a **fresh Ubuntu user environment**.
+⚠️ This deletes user settings and data. Only use in a VM.
 
 ---
 
-## Step 6: Re-Run Codekub After Reboot
+## 8️⃣ Re-Run Codekub
 
 After reboot:
 
-1. Log in again
-2. Open Terminal
-3. Run:
-
 ```bash
-curl -sSL https://raw.githubusercontent.com/CodeCompasss/codekub/refs/heads/dev/boot.sh | bash
+curl -sSL https://raw.githubusercontent.com/CodeCompasss/codekub/main/boot.sh | bash
 ```
 
-You can repeat **Step 5 → Step 6** for further testing.
+* Repeat **snapshot → test → restore** if needed.
 
 ---
 
+## 9️⃣ YouTube Installation Video
+
+[Watch the installation process](https://youtu.be/AU_xhhFQX-0)
+
+* Test all features
+* Open apps, check themes, make sure GNOME settings apply
+
+---
+
+### ✅ Key Problems & Solutions
+
+1. **Boot script downloads main branch by default**
+
+   * Use `OMAKUB_REF` to test dev or other branches
+
+2. **ASCII art**
+
+   * Cannot use `'` inside ASCII art
+   * Use here-doc (`cat <<'EOF'`)
+
+3. **Unclosed quotes**
+
+   * Check all `"..."` to prevent `unexpected EOF` errors
+
+4. **Testing safely**
+
+   * Use VM snapshots or reset environment to re-test

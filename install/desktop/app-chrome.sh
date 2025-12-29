@@ -1,9 +1,30 @@
 #!/bin/bash
+set -e
 
-# Browse the web with the most popular browser. See https://www.google.com/chrome/
-cd /tmp
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt install -y ./google-chrome-stable_current_amd64.deb
-rm google-chrome-stable_current_amd64.deb
-xdg-settings set default-web-browser google-chrome.desktop
-cd -
+# If Chrome is already installed, skip
+if command -v google-chrome >/dev/null 2>&1; then
+  echo "✅ Google Chrome already installed. Skipping."
+  xdg-settings set default-web-browser google-chrome.desktop || true
+  return 0 2>/dev/null || true
+fi
+
+echo "⬇️ Installing Google Chrome..."
+
+TMP_DEB="/tmp/google-chrome-stable_current_amd64.deb"
+
+# Clean old or corrupted file
+rm -f "$TMP_DEB"
+
+# Download with fixed filename
+wget -O "$TMP_DEB" https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+# Install
+sudo apt install -y "$TMP_DEB"
+
+# Cleanup
+rm -f "$TMP_DEB"
+
+# Set default browser
+xdg-settings set default-web-browser google-chrome.desktop || true
+
+echo "🎉 Google Chrome installed"

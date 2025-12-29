@@ -62,6 +62,8 @@ Learn more about the original project at:
 
 ---
 
+here is the youtube video link on installation process 
+[Watch this video](https://youtu.be/AU_xhhFQX-0)
 
 
 ## License
