@@ -27,4 +27,4 @@ rm -f "$TMP_DEB"
 # Set default browser
 xdg-settings set default-web-browser google-chrome.desktop || true
 
-echo "🎉 Google Chrome installed
+echo "🎉 Google Chrome installed"
